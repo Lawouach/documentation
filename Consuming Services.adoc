@@ -1,9 +1,10 @@
 # Consuming Muon Services
 
 Muon is all of :-
-* A set of concepts and ideas
-* A set of libraries
-* A A set of network protocols
+
+ * A set of concepts and ideas
+ * A set of libraries
+ * A A set of network protocols
 
 If you have an existing Muon service, and you want to interact with it, then you have to use all of these things in order to do so.
 
@@ -66,7 +67,7 @@ setTimeout(function() {
         });
     });
 },3500);
-````
+```
 
 You may querytest this new service using the cli
 
