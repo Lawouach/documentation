@@ -115,6 +115,10 @@ muon -d local query muon://node-service/query
 
 ## Next Steps
 
-* Building a multi service system quickly.
+* Consuming services
+* Using CQRS
+* Using event broadcasting
+* Using Reactive Streams
+* Event Sourcing using the Photon Event Store
 * Extending Muon
-* Building a new implementation.
+* Building a new implementation of Muon.
