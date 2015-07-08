@@ -115,7 +115,7 @@ muon -d local query muon://node-service/query
 
 ## Next Steps
 
-* Consuming services
+* [Consuming services](Consuming Services.adoc)
 * Using CQRS
 * Using event broadcasting
 * Using Reactive Streams
