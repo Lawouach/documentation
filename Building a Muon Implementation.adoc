@@ -1,0 +1,31 @@
+# Building a new Implementation of Muon
+
+Muon is designed to be polyglot and has a strong concept of compatibility.
+
+This comes from the nature of Muon libraries, which maps the rich communication concepts down to particular network protocols that form the transports.
+
+There are Muon libraries implemented in multiple languages, but not all of them. If you want to integrate with the Muon ecosystem (for example, Photon) in a natural way, and gain the greatest benefit then the most effective way is to use a Muon library.
+
+This document describes the process to go through in order to build a new implementation of Muon.
+
+## Introducing the Protocol Specifications
+
+https://github.com/muoncore/muon-protocol-specifications
+
+
+
+## Design and build a language idiomatic API
+
+A full implementation of Muon
+
+
+## Build a Discovery Implementation
+
+## Build a CQRS style transport
+
+## Build a Broadcast Transport
+
+## Build a Reactive Streaming Transport
+
+
+
