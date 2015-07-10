@@ -1,5 +1,14 @@
-# Muon Documentation
+# Introducing Muon
 
-Microservices for everyone
+Muon is an opinionated programming model for building Microservice based systems.
 
-See the wiki for documentation.
+It takes the position that adopting a programming model for Microservices should be a positive choice, and that you shouldn't simply adopt the way that HTTP or a particular messaging system expects you to interact.
+
+It is Event Oriented, Reactive and fully polyglot, enabling you to choose the best language for the particular job and easily integrate into your Microservices system.
+
+It supports multiple network transports, and multiple serialisation/ encoding schemes out of the box with excellent interoperability between languages and runtimes.
+
+## 10 minutes to Microservices
+
+See Getting Started
+
