@@ -12,3 +12,11 @@ It supports multiple network transports, and multiple serialisation/ encoding sc
 
 See Getting Started
 
+## Next Steps
+
+* Using CQRS
+* Using event broadcasting
+* Using Reactive Streams
+* Event Sourcing using the Photon Event Store
+* Extending Muon
+* Building a new implementation of Muon.
