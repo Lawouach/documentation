@@ -88,11 +88,9 @@ var muonServer = muonCore.muon('node-server', amqp.getDiscovery(), [
 
 muonServer.addTransport(amqp);
 
-muonService.onReady(function() {
-    muonServer.resource.onQuery("/query", "Get the events", function(event, data, respond) {
+muonServer.resource.onQuery("/query", "Get the events", function(event, data, respond) {
         respond({"echo":"this is the server response"});
     });
-});
 ```
 
 ### Testing the Service
