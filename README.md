@@ -8,7 +8,7 @@ It is Event Oriented, Reactive and fully polyglot, enabling you to choose the be
 
 It supports multiple network transports, and multiple serialisation/ encoding schemes out of the box with excellent interoperability between languages and runtimes.
 
-## 10 minutes to Microservices
+## Muon Microservices in 10 minutes
 
 See Getting Started
 
