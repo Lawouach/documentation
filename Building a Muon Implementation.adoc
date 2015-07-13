@@ -16,7 +16,7 @@ The point of compatibility in Muon are the transport network protocols. Your new
 
 ## Design and build a language idiomatic API
 
-A full implementation of Muon
+A full implementation of Muon allows
 
 
 ## Build a Discovery Implementation
