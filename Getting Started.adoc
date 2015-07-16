@@ -113,5 +113,5 @@ muon -d local query muon://node-service/query
 
 ## Next Steps
 
-* link:"Consuming Services.adoc"[Consuming Services]
+link:Consuming%20Services.adoc[Consuming Services]
 
