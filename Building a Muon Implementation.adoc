@@ -26,7 +26,7 @@ Muon is designed to be a peer to peer system that allows services to locate each
 
 Your first task will be to implement a discovery system in your library so that when your test service boots up, other Muon libraries will locate it.
 
-link:amqp/Discovery[Building and AMQP Discovery]
+link:amqp/Discovery[Building an AMQP Discovery]
 
 ## Build a CQRS style transport
 
