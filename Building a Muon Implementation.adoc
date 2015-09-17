@@ -12,17 +12,21 @@ This document describes the process to go through in order to build a new implem
 
 https://github.com/muoncore/muon-protocol-specifications
 
-Compatibility between Muon implementations is enforced at the transport layer. The protocol for each transport is specified in a set of executable specifications at the above project. You will start your implementation by picking a particular transport and discovery system and implementing your new library so that it passes the specs. Once you have done so, your library is Muon compatible and will interoperate with the rest of the ecosystem.
+Compatibility between Muon implementations is enforced at the transport layer. The protocol for each transport is specified in a set of executable specifications at the above project. You will start your implementation by picking a discovery system and event network transport and implementing your new library so that it passes the appropriate specs. Once you have done so, your library is Muon compatible and will interoperate with the rest of the ecosystem.
 
 ## Design and build a language idiomatic API
 
-A full implementation of Muon allows a user to interact with a distributed system in a way that feels natural for that environment and makes use of the idioms, features and capabilities of the language and runtime.
+A full implementation of Muon allows a user to interact with a distributed system in a way that feels natural for that platform, makes use of the best practice idioms, features and capabilities of the language and runtime.
 
 Part of your job as a library author is to translate the core Muon concepts and features into ones that work well in the host environment.
 
 ## Build a Discovery Implementation
 
+Muon is designed to be a peer to peer system that allows services to locate each other dynamically and transparently via some Discovery implementation.
 
+Your first task will be to implement a discovery system in your library so that when your test service boots up, other Muon libraries will locate it.
+
+link:amqp/Discovery[Building and AMQP Discovery]
 
 ## Build a CQRS style transport
 
