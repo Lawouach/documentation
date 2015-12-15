@@ -28,11 +28,7 @@ Your first task will be to implement a discovery system in your library so that 
 
 link:amqp/Discovery.adoc[Building an AMQP Discovery]
 
-## Build a CQRS style transport
-
-## Build a Broadcast Transport
-
-## Build a Reactive Streaming Transport
+## Building Channels
 
 ## Introspection APIs
 
