@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.2">
-<title>Implementing CQRS in a new Muon library</title>
+<title>Muon Node docs</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -411,61 +411,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Implementing CQRS in a new Muon library</h1>
+<h1>Muon Node docs</h1>
 </div>
 <div id="content">
-<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>Command Query Responsibility Segregation (CQRS) is a pattern that asserts that there are different pressures on actions that are <code><code>Queries</code></code> and actions that are <code><code>Commands</code></code>, different pressures when you interrogate a system versus when you update it. <a href="http://martinfowler.com/bliki/CQRS.html" class="bare">http://martinfowler.com/bliki/CQRS.html</a></p>
-</div>
-<div class="paragraph">
-<p>Muon takes this concept as a core part of it&#8217;s design.</p>
-</div>
-<div class="paragraph">
-<p>Every transport will need to implement these in diffeent ways, but the semantics that appear on top of the transport will be the same.</p>
-</div>
-<div class="paragraph">
-<p>Your job as a library designer is to understand how these semantics should be presented to the user, and then map those to the underlying transports for moving between services.</p>
-</div>
-<div class="paragraph">
-<p>At the transport layer, both Commands an Queries look similar, being an event interchange/ request-response.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_endpoints">Endpoints</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Muon defines the concept of an 'endpoint' that is used in all of Commands, Queries and Streams. They can overlay each other, with a specific endpoint being the tuple of path + mechanism (command, query, stream).</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_query">Query</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To implement a Query, you should permit a user to specify and endpoint</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_command">Command</h2>
-<div class="sectionbody">
 
-</div>
-</div>
-<div class="sect1">
-<h2 id="_transport">Transport</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Each transport will need to map these in different ways. Muon compatibility is enforced at the <code><code>transport</code></code> layer, not at higher levels. So long as you can interoperate at the transport layer, you are done. Different libraries will implement the concepts in different ways and provide more or less advanced features to aid the user. This is a choice you a free to make, so long as compatibility at the transports level is maintained.</p>
-</div>
-<div class="paragraph">
-<p><a href="amqp/CQRS.adoc">Building an AMQP CQRS.adoc</a></p>
-</div>
-</div>
-</div>
 </div>
 <div id="footer">
 <div id="footer-text">
