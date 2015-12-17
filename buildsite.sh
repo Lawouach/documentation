@@ -7,9 +7,7 @@ git push origin master
 
 find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && asciidoctor *.adoc'
 
-git stash
-git checkout gh-pages
-git stash pop
+git checkout -f gh-pages
 git add .
 git commit -m "Update docs"
 git push origin
