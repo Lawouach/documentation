@@ -1,5 +1,9 @@
 #!/bin/bash
 
+find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && rm *.html'
+git add --all . 
+git commit -m "Remove stale html"
+
 find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && asciidoctor *.adoc'
 
 git checkout gh-pages
