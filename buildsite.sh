@@ -10,5 +10,5 @@ find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && asciidoctor *.ado
 git checkout -f gh-pages
 git add .
 git commit -m "Update docs"
-git push origin
+git push origin gh-pages
 git checkout master
