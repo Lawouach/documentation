@@ -4,10 +4,12 @@ rm -rf tempdir
 
 git clone -b gh-pages git@github.com:microserviceux/documentation.git tempdir
 
-find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && asciidoctor -D tempdir *.adoc'
+MYDIR=`pwd`
 
-cd -v tempdir
+#find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && asciidoctor -D empdir *.adoc'
+asciidoctor -D tempdir `find . -name *.adoc`
 
+cd tempdir
 
 git add .
 git status
