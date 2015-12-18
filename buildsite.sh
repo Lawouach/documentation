@@ -1,14 +1,20 @@
 #!/bin/bash
 
-find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && rm *.html'
-git add --all . 
-git commit -m "Remove stale html"
-git push origin master
+rm -rf tempdir
 
-find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && asciidoctor *.adoc'
+git clone -b gh-pages git@github.com:microserviceux/documentation.git tempdir
 
-git checkout -f gh-pages
+find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && asciidoctor -D tempdir *.adoc'
+
+cd -v tempdir
+
+
 git add .
+git status
 git commit -m "Update docs"
 git push origin gh-pages
-git checkout master
+
+cd ..
+
+rm -rf tempdir
+
