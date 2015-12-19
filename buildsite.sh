@@ -16,9 +16,10 @@ cd tempdir
 git add .
 git status
 git commit -m "Update docs"
-git push origin gh-pages
+git push origin -f gh-pages
 
 cd ..
 
 rm -rf tempdir
 
+find -iname '*.html' -execdir rm {} \;
