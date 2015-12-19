@@ -6,8 +6,10 @@ git clone -b gh-pages git@github.com:microserviceux/documentation.git tempdir
 
 MYDIR=`pwd`
 
-#find . -type d -print0 | xargs -0 -L1 sh -c 'cd "$0" && pwd && asciidoctor -D empdir *.adoc'
-asciidoctor -D tempdir `find . -name *.adoc`
+find -iname '*.adoc' -execdir asciidoctor {} \;
+
+rsync -av --exclude='tempdir/' --include='*.adoc' . tempdir/
+
 
 cd tempdir
 
