@@ -10,7 +10,7 @@ It supports multiple network transports, and multiple serialisation/ encoding sc
 
 ## Muon Microservices in 10 minutes
 
-See link:Getting%20Started.adoc[Getting Started]
+See link:Getting_Started.html[Getting Started]
 
 ## Next Steps
 
