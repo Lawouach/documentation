@@ -7,10 +7,11 @@ The group of projects, that we group together as *MicroserviceUX*, contains a se
 using best practice approaches and above all, a great developer and operations experience.
 
 The curently released projects are :-
- * anchor:muon[]Muon - A new programming model for microservices. Event based, reactive, polyglot and performant.
- * anchor:photon[]Photon - A high performance event store with HA, event projections and more.
 
-[[muon]]== Muon 
+* anchor:muon[]Muon - A new programming model for microservices. Event based, reactive, polyglot and performant.
+* anchor:photon[]Photon - A high performance event store with HA, event projections and more.
+
+== [[muon]]Muon 
 
 Muon is an opinionated programming model for building Microservice based systems. It is the basis of the other tools below.
 
@@ -30,7 +31,7 @@ It is designed to be naturally polyglot, and there are currently implementations
 anchor:bookmark-b[]Use a cross reference to link to this location.
 
 
-[[photon]]== Photon
+== [[photon]]Photon
 
 Photon is a high performance event stream store. It enables Muon Microservices to move beyond simple event based communication to add _event sourcing_ as a core feature.
 
