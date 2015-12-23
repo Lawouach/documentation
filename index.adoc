@@ -1,6 +1,16 @@
-# Introducing Muon
+= Microservices Toolkit
 
-Muon is an opinionated programming model for building Microservice based systems.
+Microservices have taken the world by storm. There are many ways to build Microservices, however many developers will
+reach for HTTP based systems. We believe that this is very limiting.
+
+There is another way!
+
+This project contains a set of tools, libraries and templates for you to build _event based_, highly scalable Microservices
+using best practice approaches and above all, a great developer and operations experience.
+
+== Muon 
+
+Muon is an opinionated programming model for building Microservice based systems. It is the basis of the other tools below.
 
 It takes the position that adopting a programming model for Microservices should be a positive choice, and that you shouldn't simply adopt the way that HTTP or a particular messaging system expects you to interact.
 
@@ -8,15 +18,19 @@ It is Event Oriented, Reactive and fully polyglot, enabling you to choose the be
 
 It supports multiple network transports, and multiple serialisation/ encoding schemes out of the box with excellent interoperability between languages and runtimes.
 
-## Muon Microservices in 10 minutes
+It is designed to be naturally polyglot, and there are currently implementations for Java and NodeJS
 
-See link:Getting_Started.html[Getting Started]
+* link:java/SNAPSHOT/index.html[Muon Java]
+* link:clojure/SNAPSHOT/index.html[Muon Clojure]
+* link:node/latest/index.html[Muon Node]
 
-## Next Steps
+== Photon
 
-* Using CQRS
-* Using event broadcasting
-* Using Reactive Streams
-* Event Sourcing using the Photon Event Store
-* Extending Muon
-* Building a new implementation of Muon.
+Photon is a high performance event stream store. It enables Muon Microservices to move beyond simple event based communication to add _event sourcing_ as a core feature.
+
+It also has HA, pluggable persistence and the ability to generate run aggregation/ event projection functions written in a variety of languages.
+
+
+== Tutorials
+
+Getting started NodeJS - link:Getting_Started.html[Getting Started]
