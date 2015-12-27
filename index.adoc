@@ -1,4 +1,4 @@
-= The Microservices Toolkit from Simplicity Itself
+= The MicroserviceUX Toolkit from Simplicity Itself
 
 Microservices have taken the world by storm. There are many ways to build Microservices, however many developers will
 reach for HTTP based systems. We believe that this is very limiting.   _There is another way!_
