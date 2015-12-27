@@ -28,9 +28,6 @@ It is designed to be naturally polyglot, and there are currently implementations
 * link:clojure/SNAPSHOT/index.html[Muon Clojure]
 * link:node/latest/index.html[Muon Node]
 
-
-anchor:bookmark-b[]Use a cross reference to link to this location.
-
 [[photon]]
 == Photon
 
