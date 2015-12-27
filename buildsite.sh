@@ -15,7 +15,7 @@ git checkout gh-pages
 cd $MYDIR
 pwd
 
-find -iname '*.adoc' -execdir asciidoctor -a stylesheet="`pwd`/css/doc.css" {} \;
+./render.sh
 
 rsync -av --del --exclude="buildsite.sh" --exclude="*.adoc" --exclude=".git/" --exclude="*.class"  --include='*.adoc' . /tmp/muon-doc-gen
 

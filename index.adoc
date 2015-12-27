@@ -1,4 +1,4 @@
-= The MicroserviceUX Toolkit from Simplicity Itself
+= The MicroserviceUX Toolkit
 
 Microservices have taken the world by storm. There are many ways to build Microservices, however many developers will
 reach for HTTP based systems. We believe that this is very limiting.   _There is another way!_
@@ -39,3 +39,17 @@ It also has HA, pluggable persistence and the ability to generate run aggregatio
 == Tutorials
 
 Getting started NodeJS - link:Getting_Started.html[Getting Started]
+
+== Contributor
+
+The MicroserviceUX contains components contributed by 
+
+image::img/simplicityitself.jpg[width="500", title="Simplicity Itself"]
+
+image::img/sky.png[width="300", title="Sky CIS Tech Futures"]
+
+== Commercial Support
+
+The MicroserviceUX toolkit is commercially supported by 
+
+image::img/simplicityitself.jpg[width="500", title="Simplicity Itself"]
